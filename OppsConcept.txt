@@ -1,0 +1,137 @@
+                                                       OOPs Concept.
+                             Composition.
+"Composition is a fundamental concept in object-oriented programming (OOP) that involves creating complex objects by combining simpler objects or components. In composition, one class contains an object of another class and provides functionality by delegating calls to the contained object. This is often in contrast to inheritance, where a class can inherit properties and behaviors from another class."
+Composition represents with  
+Key points about composition:
+1.Object Composition:
+In composition, objects are combined to create more complex objects.
+Rather than relying on a hierarchy of classes, composition involves building objects by assembling other objects.
+2.Has-A Relationship:
+Composition typically represents a "has-a" relationship. For example, a Car class might have a Engine object, a Wheels object, and a Chassis object.
+The containing class (e.g., Car) "has" or "is composed of" instances of other classes.
+3.Code Reusability:
+Composition promotes code reusability by allowing the reuse of existing classes as components in new classes.
+This is often considered more flexible than inheritance, as it avoids some of the issues related to class hierarchies.
+4.Encapsulation:
+Composition supports encapsulation by hiding the internal details of the components. The external class interacts with the composed object through a well-defined interface.
+This helps in creating modular and maintainable code.
+Composition is often favored over inheritance when creating complex systems because it allows for greater flexibility, easier maintenance, and avoids some of the pitfalls associated with deep class hierarchies.
+      
+                                          Association.
+Association is a fundamental concept in object-oriented programming (OOP) that represents a relationship between two or more classes. It describes how objects of different classes interact with each other. Associations can be classified into various types based on the nature and multiplicity of the relationship.There can be four types of association between the objects:
+One to One
+One to Many
+Many to One
+Many to Many.
+ Here are some key points about associations:
+Association represents with:
+                                                 
+1.Types of Associations:
+Aggregation: Represents a "whole-part" relationship, where one class is a part of another. It is a weaker form of association where the associated objects can exist independently.
+Composition: Similar to aggregation but with a stronger relationship. The part (child) object is considered an integral part of the whole (parent) object, and its existence is dependent on the whole.
+Association: Represents a more general relationship between classes. Objects of one class are associated with objects of another class without any implied ownership or containment.
+2.Directionality:
+Associations can be unidirectional or bidirectional.
+In a unidirectional association, one class is aware of the other, but not necessarily vice versa.
+In a bidirectional association, both classes are aware of each other and can interact.
+3.Multiplicity:
+Multiplicity defines how many instances of one class are related to instances of another class.
+Associations are crucial for modeling relationships between classes and understanding how different parts of a system collaborate. They help define the structure and behavior of a system in an object-oriented paradigm.
+                                            Aggregation.
+"Aggregation is a form of association in object-oriented programming that represents a "whole-part" relationship between classes. In an aggregation, one class is considered as a container or holder for another class, indicating that the contained class is part of the whole, but it can exist independently. Aggregation is a weaker form of association compared to composition."
+Aggregation represents with:
+ characteristiKey cs of aggregation: 
+1."Has-A" Relationship:
+Aggregation represents a "has-a" relationship, indicating that one class has another class as a part or component.
+2.Independence of the Part:
+In an aggregation, the part (contained class) can exist independently of the whole (container class). The part can be created, modified, and destroyed without affecting the existence of the whole.
+3.Multiplicity:
+Aggregation can involve multiplicity to denote how many instances of the part class are associated with a single instance of the whole class.
+4.UML Notation:
+In Unified Modeling Language (UML) diagrams, aggregation is represented by a diamond shape at the container end of the association line.
+Aggregation is useful for modeling relationships where one class is composed of other classes, but the contained classes have a level of independence and can be shared among multiple instances of the container class.
+
+                                           Inheritance:
+"Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class (derived or child class) to inherit properties and behaviors from an existing class (base or parent class). The child class can extend or override the functionalities of the parent class, promoting code reuse and creating a hierarchy of classes."
+Key characteristics of inheritance:
+1."Is-A" Relationship:
+Inheritance represents an "is-a" relationship, indicating that a derived class is a specialized version of its parent class. For example, if we have a class Bird and a derived class Sparrow, we can say that a Sparrow "is-a" Bird.
+2.Code Reusability:
+Inheritance allows the reuse of code from an existing class, reducing redundancy and promoting a modular approach to software design.
+3.Base Class (Parent Class):
+The class whose properties and behaviors are inherited is called the base class or parent class. It serves as a blueprint for the derived classes.
+4.Derived Class (Child Class):
+The class that inherits properties and behaviors from a base class is called the derived class or child class. It can add new features or override existing ones.
+5.Access to Members:
+Public and protected members of the base class are accessible in the derived class, promoting encapsulation.
+6.Single Inheritance vs. Multiple Inheritance:
+Single Inheritance: A class can inherit from only one base class. Most OOP languages, such as Java and C#, support single inheritance.
+Multiple Inheritance: A class can inherit from multiple base classes. Some languages, like C++, support multiple inheritance, but it can lead to complications known as the "diamond problem."
+Inheritance is a powerful mechanism in OOP that facilitates code organization, extensibility, and the creation of class hierarchies. However, it should be used judiciously to avoid creating overly complex or tightly coupled systems.
+                                       Polymorphism.
+"Polymorphism is a fundamental concept in object-oriented programming (OOP) that allows objects of different types to be treated as objects of a common base type. This enables a single interface to represent various underlying forms or types. Polymorphism comes in two main forms: compile-time polymorphism (also known as method overloading) and runtime polymorphism (method overriding)."
+1.Compile-Time Polymorphism (Method Overloading):
+Compile-time polymorphism occurs when multiple methods in the same class have the same name but different parameters (either different types or a different number of parameters).
+2.Runtime Polymorphism (Method Overriding):
+Runtime polymorphism is achieved through method overriding, where a subclass provides a specific implementation for a method that is already defined in its superclass.
+3.Polymorphism with Interfaces:
+Polymorphism is often seen in interfaces, where multiple classes can implement the same interface, and objects of those classes can be treated interchangeably through the interface.
+Polymorphism enhances code flexibility, maintainability, and extensibility by allowing code to work with objects of different types through a common interface. It is a key concept in OOP that supports abstraction and encapsulation.
+                                         Abstraction.
+Abstraction is a fundamental concept in object-oriented programming (OOP) that involves simplifying complex systems by modeling classes based on the essential properties and behaviors they share. It is the process of focusing on the essential characteristics of an object while ignoring or hiding the irrelevant details. Abstraction allows developers to create models that represent the core aspects of a system and hide the complexities of the implementation.
+Key principles of abstraction:
+1.Creating Abstract Classes or Interfaces.
+2.Defining Abstract Methods.
+3.Hiding Implementation Details.
+4.Focus on What, Not How.
+5.Abstraction vs. Encapsulation.
+                                               Encapulation.
+Encapsulation is one of the fundamental principles of object-oriented programming (OOP). It involves bundling the data (attributes) and methods (functions or behaviors) that operate on the data into a single unit known as a class. The primary goal of encapsulation is to restrict direct access to some of an object's components and hide the internal details of its implementation. It promotes information hiding, modularity, and improved code organization.
+Key concepts of encapsulation:
+1.Class Definition.
+2.Access Modifiers.
+3.Data Hiding.
+4.Getter and Setter Methods.
+5.Benefits of Encapulation.
+                                SOLID Principles of Java.
+SOLID is an acronym that stands for five key design principles: single responsibility principle, open-closed principle, Liskov substitution principle, interface segregation principle, and dependency inversion principle.
+Single Responsibility Principle (SRP)
+Open-Closed Principle (OCP)
+Liskov Substitution Principle (LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         
+
+                                 
+
+
+                                            
+
+
+
+
+
+
+
